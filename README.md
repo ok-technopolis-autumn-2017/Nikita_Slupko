@@ -1,2 +1,2 @@
 # Nikita_Slupko
-Nikita Slupkp
+Nikita Slupko
