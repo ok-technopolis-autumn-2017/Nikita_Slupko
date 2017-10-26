@@ -1,70 +1,63 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>ToDo</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <Title>todo</Title>
 </head>
 <body>
-    <div class = "page" align="center">
-        <h1>todos</h1>
-        <table>
-            <tr>
-                <th>
-                    <button name="show-rows">
-                        <img src="http://raw.githubusercontent.com/ok-technopolis-autumn-2017/todo-app-design/master/icons/select-all.png" alt="select-all"/>
-                    </button>
-                </th>
-                <th>
-                     <input type="text" placeholder="What needs to be done?"  size="60" />
-                </th>
-            </tr>
-            <tr>
-                <td>
-                    <button></button>
-                </td>
-                <td align="left">
-                    HTML
-                    <button ><img src="https://raw.githubusercontent.com/ok-technopolis-autumn-2017/todo-app-design/master/icons/close.png"   alt="delete" /></button> 
-                </td>
-            </tr>
-            <tr>
-                <td>
-                    <button name="complete_button" role="button">
-                        <img src="https://raw.githubusercontent.com/ok-technopolis-autumn-2017/todo-app-design/master/icons/completed.png" alt="check-mark">
-                    </button>
-                </td>
-                <td>
-                    <s>CSS</s>
-                    <button ><img src="https://raw.githubusercontent.com/ok-technopolis-autumn-2017/todo-app-design/master/icons/close.png"   alt="delete" /></button>
-                </td>
-            </tr>
-            <tr>
-                <td>
-                    <button></button>
-                </td>
-                <td align="left">
-                    JS
-                    <button ><img src="https://raw.githubusercontent.com/ok-technopolis-autumn-2017/todo-app-design/master/icons/close.png"   alt="delete" /></button> 
-                </td>
-            </tr>
-            <tr>
-                <td>
-                    <button></button>
-                </td>
-                <td align="left">
-                    JS Tools
-                    <button ><img src="https://raw.githubusercontent.com/ok-technopolis-autumn-2017/todo-app-design/master/icons/close.png"   alt="delete" /></button> 
-                </td>
-            </tr>
-            <tr>
-                <td colspan="3">
-                    3 Items Left
-                    <input type="radio" checked/>All
-                    <input type="radio" />Active
-                    <input type="radio" />Completed
-                    <button name="undo-all-params">Clear completed</button>
-                </td>
-            </tr>
-        </table>
+<div class="main-header">
+    <h1>todos</h1>
+</div>
+<div class="main-list">
+    <div class = "main-list_top-string">
+        <button aria-label="Отметь все как выбранные">v</button>
+        <input placeholder = "What needs to be done?" aria-label ="Поле добавления"/>
     </div>
+
+    <div class="main-list_added-tasks">
+
+        <div class="main-list_added-tasks_task">
+            <input type="checkbox"  aria-label="Пометить как невыполненное" />
+            <span>HTML</span>
+            <button aria-label="Удалить">x</button>
+        </div>
+
+        <div class="main-list_added-tasks_task">
+            <input type="checkbox" checked="checked" aria-label="Пометить как невыполненное" />
+            <span>CSS</span>
+            <button aria-label="Удалить">x</button>
+        </div>
+
+        <div class="main-list_added-tasks_task">
+            <input type="checkbox" aria-label="Пометить как невыполненное" />
+            <span>JS</span>
+            <button aria-label="Удалить">x</button>
+        </div>
+
+        <div class="main-list_added-tasks_task">
+            <input type="checkbox"  aria-label="Пометить как невыполненное" />
+            <span>JS tools</span>
+            <button aria-label="Удалить">x</button>
+        </div>
+    </div>
+
+    <div class = "main-list_count-items">
+        <span>3 items left</span>
+    </div>
+
+    <div class = "main-list_options" >
+        <div class="main-list_options_filters">
+            <button aria-label="Отобразить все">All</button>
+            <button aria-label="Отобразить активные">Active</button>
+            <button aria-label="Отобразить заверенные">Completed</button>
+        </div>
+
+        <button name="delete-all-completed">Clear completed</button>
+    </div>
+
+
+</div>
+
 </body>
+
 </html>
